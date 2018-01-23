@@ -1,9 +1,5 @@
 function palindrome(string) {
-	string = string.toString();
-	if ((string == string.split('').reverse().join('')) === true) {
-	return ''+ string +' is a palindrome';
-    }
-	else {
-	return ''+ string +' is not a palindrome';
-    }
+	if (string.length === 0) { return true; }
+	if (string[0] !== string[string.length-1]) { return false;}
+	return palindrome(string.slice(1, string.length-1));	
 }
