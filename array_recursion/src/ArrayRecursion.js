@@ -9,5 +9,3 @@ var sumArray = function(array) {
     return array.pop() + sumArray(array);
   }
 };
-
-console.log(sumArray([101,-2,15,-26,13,17,23]));

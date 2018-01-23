@@ -1,0 +1,6 @@
+var palindrome = function(string) {
+
+
+
+
+};
